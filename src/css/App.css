@@ -1,0 +1,124 @@
+/* answers
+   ========================================================================== */
+.answer-v01 {
+  padding-bottom: var(--size-1);
+}
+
+/* separator
+========================================================================== */
+.separator-v01 {
+  border-color: var(--clr-accent-1);
+  border-radius: 5px;
+}
+
+/* button
+   ========================================================================== */
+.button-v01 {
+  border-radius: var(--pri-brd-rad);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--pri-transition), color var(--pri-transition);
+}
+
+.button-v01:focus-visible {
+  outline: 2px solid var(--clr-gray-0);
+  outline-offset: 2px;
+}
+
+.button-v01-large {
+  padding: calc(var(--pri-padding) / 2) calc(var(--pri-padding) * 2);
+}
+
+.button-v02 {
+  background-color: var(--clr-gray-0);
+  border: var(--pri-brd);
+  color: var(--clr-gray-9);
+}
+
+.button-v02:hover {
+  background-color: var(--clr-gray-9);
+  color: var(--clr-gray-0);
+}
+
+.button-v03 {
+  background-color: var(--clr-gray-9);
+  color: var(--clr-gray-0);
+}
+
+.button-v03:hover,
+.checked {
+  background-color: var(--clr-gray-0);
+  color: var(--clr-gray-9);
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.correct {
+  background-color: #acd8aa;
+  color: var(--clr-gray-9);
+}
+
+.incorrect {
+  background-color: #f48498;
+}
+
+.score {
+  background-color: var(--clr-gray-9);
+  color: var(--clr-gray-0);
+  border-radius: var(--pri-brd-rad);
+  text-align: center;
+}
+
+.required {
+  background-color: #f48498;
+  color: var(--clr-gray-9);
+  border-radius: var(--pri-brd-rad);
+}
+
+/* img
+   ========================================================================== */
+.img-v01 {
+  display: block;
+  max-width: 60%;
+  border: var(--pri-brd-rad);
+  margin: calc(var(--size-1) * 2) auto;
+}
+
+/* misc
+   ========================================================================== */
+.center-el {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.ul-v01 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--size-1);
+}
+
+/* large screens
+========================================================================== */
+@media only screen and (min-width: 992px) {
+  .flex {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .align-right {
+    margin: var(--size-1) 0 auto auto;
+  }
+}

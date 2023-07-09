@@ -1,0 +1,57 @@
+.fade-in {
+  animation: fadeIn calc(var(--pri-transition-time) * 8) ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp calc(var(--pri-transition-time) * 6) ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shake {
+  animation: shake var(--pri-transition-time) ease;
+  animation-iteration-count: 5;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

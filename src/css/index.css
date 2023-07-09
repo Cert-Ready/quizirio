@@ -1,0 +1,133 @@
+/* fonts
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&display=swap");
+
+:root {
+  /* font  */
+  --pri-font: "Hind", sans-serif;
+  --sec-font: "Expletus Sans", cursive;
+
+  /* size  */
+  --size-0: 0.5rem;
+  --size-1: 1rem;
+
+  /* color */
+  --clr-gray-0: hsl(210, 17%, 98%);
+  --clr-gray-9: hsl(205, 100%, 9%);
+  --clr-accent-1: hsl(195, 71%, 31%);
+
+  /* misc  */
+  --pri-padding: var(--size-1);
+  --pri-transition-time: 250ms;
+  --pri-transition: var(--pri-transition-time) ease-in;
+  --pri-brd: 2px solid var(--clr-gray-9);
+  --pri-brd-rad: 5px;
+
+  /* gradient */
+  --pri-bg-grad: radial-gradient(
+      circle at 83% 70%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 72% 5%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 26% 91%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 19% 59%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 18% 99%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 74% 21%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 54% 49%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 14% 83%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 37% 84%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 42% 27%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 67% 82%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    linear-gradient(315deg, rgb(207, 223, 223), #001c30);
+  /* linear-gradient(315deg, rgb(207, 223, 223), rgb(79, 93, 149)); */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* set core body defaults
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--clr-gray-9);
+  background-image: var(--pri-bg-grad);
+  background-attachment: fixed;
+  color: var(--clr-gray-0);
+  font-family: var(--pri-font);
+  min-height: 100%;
+  padding: var(--pri-padding);
+}
